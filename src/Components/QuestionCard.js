@@ -12,7 +12,7 @@ const useStyles = makeStyles((theme) => ({
     margin: 20,
     padding: 10,
     boxShadow: "rgba(0, 0, 0, 0.24) 0px 3px 8px;",
-
+    cursor: "pointer",
     [theme.breakpoints.down("xs")]: {
       flexDirection: "column",
       alignItems: "center",

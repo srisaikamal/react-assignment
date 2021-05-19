@@ -34,6 +34,9 @@ function App() {
   console.log(page);
   return (
     <>
+      <p style={{ textAlign: "center", fontWeight: "bold", fontSize: 24 }}>
+        Stackoverflow Rail
+      </p>
       {questions && (
         <InfiniteScroll
           dataLength={questions.length}

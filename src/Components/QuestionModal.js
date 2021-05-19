@@ -1,8 +1,14 @@
 import React from "react";
 import { Avatar, Dialog } from "@material-ui/core/";
 import { makeStyles } from "@material-ui/core";
-
+import { X } from "react-feather";
 const useStyles = makeStyles((theme) => ({
+  closeIcon: {
+    marginLeft: "auto",
+    marginRight: 10,
+    marginTop: 10,
+    cursor: "pointer",
+  },
   divContainer: {
     width: 400,
     backgroundColor: "white",
@@ -51,6 +57,7 @@ const QuestionModal = ({ open, setOpen, data }) => {
 
   return (
     <Dialog open={open} onClose={handleClose}>
+      <X className={classes.closeIcon} onClick={handleClose} />
       <div className={classes.divContainer}>
         <p className={classes.text}>{data.title}</p>
       </div>
